@@ -1,0 +1,3 @@
+/home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/out/build/idk_what_a_preset_is/CMakeFiles/FirstOpenGLProject.dir
+/home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/out/build/idk_what_a_preset_is/CMakeFiles/edit_cache.dir
+/home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/out/build/idk_what_a_preset_is/CMakeFiles/rebuild_cache.dir
