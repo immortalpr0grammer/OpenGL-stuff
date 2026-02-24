@@ -31,10 +31,20 @@ int main() {
 
     // Creating an array with vertices of each point. In order XYZ
     GLfloat vertices[] = {
-        1.0f, 1.0f, 0,
-        1.0f, -1.0f, 0,
-        -1.0f, -1.0f, 0
+        -1.0f, -1.0f, 0.0f, // Bottom left corner
+        -0.5f, 0.0f, 0.0f, // Centered height and towards the left
+        0.0f, -1.0f, 0.0f, // Bottom middle
+        1.0f, -1.0f, 0.0f, // Bottom right corner
+        0.5f, 0.0f, 0.0f, // Centered height and towards the right
+        0.0f, 1.0f, 0.0f // Top middle
     };
+    // Creating an array with the data for which points from the vertices array to use for the triangles
+    GLuint indices[] = {
+        0, 1, 2, // Lower left triangle
+        3, 4, 2, // Lower right triangle
+        1, 4, 5 // Top middle triangle
+    };
+
 
     // Creating the window and making it the current context
     window = glfwCreateWindow(640, 480, "Window", NULL, NULL);
@@ -66,18 +76,22 @@ int main() {
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
 
-    // Creating the Vertex Buffer (batch of data) Object and the Vertex Array Object
-    GLuint VAO, VBO;
+    // Creating the the Vertex Array Object, the Vertex Buffer (Bundle of data) Object and the Element Buffer object
+    GLuint VAO, VBO, EBO;
 
     // The first parameter is the amount of objects to render
     glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &VBO);
+    glGenBuffers(1, &EBO);
     // Binding them, so that when we do a function for them it knows we want to use that specific one
     glBindVertexArray(VAO);
 
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
     // Connecting the vertices to it, so that we now have a nicely packed buffer with all the data OpenGL needs
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+    // Binding and connecting the EBO
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
 
     // Enabling the VAO or something like that, idk this is hard
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
@@ -85,7 +99,7 @@ int main() {
     // Unbinding the VAO and the VBO
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     glBindVertexArray(0);
-
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 
     // Specifying the color to use when clearing the buffers
     glClearColor(0.25f, 0.5f, 0.75f, 1.0f);
@@ -97,17 +111,16 @@ int main() {
         // Getting the current window size
         int width, height;
         glfwGetWindowSize(window, &width, &height);
-        // Giving OpenGL the window size to make it scale properly
+        // Telling OpenGL the window size to make it scale properly
         glViewport(0,0, width, height);
-
 
         // Setting the current backbuffer color to the specified glClear color
         glClear(GL_COLOR_BUFFER_BIT);
         // Making sure we actually use the shit we made
         glUseProgram(shaderProgram);
         glBindVertexArray(VAO);
-        // Drawing the triangle. The 3 stands for the amount of vertices btw
-        glDrawArrays(GL_TRIANGLES, 0, 3);
+        // Drawing the triangles. The 9 stands for the amount of vertices btw
+        glDrawElements(GL_TRIANGLES, 9, GL_UNSIGNED_INT, 0);
 
         // Swapping the two buffers around
         glfwSwapBuffers(window);
@@ -116,6 +129,7 @@ int main() {
     // Deleting the shit we made
     glDeleteVertexArrays(1, &VAO);
     glDeleteBuffers(1, &VBO);
+    glDeleteBuffers(1, &EBO);
     glDeleteProgram(shaderProgram);
 
 
