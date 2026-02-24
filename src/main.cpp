@@ -94,6 +94,12 @@ int main() {
     while (!glfwWindowShouldClose(window)) {
         // Getting any events
         glfwPollEvents();
+        // Getting the current window size
+        int width, height;
+        glfwGetWindowSize(window, &width, &height);
+        // Giving OpenGL the window size to make it scale properly
+        glViewport(0,0, width, height);
+
 
         // Setting the current backbuffer color to the specified glClear color
         glClear(GL_COLOR_BUFFER_BIT);
