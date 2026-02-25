@@ -100,23 +100,88 @@ CMakeFiles/FirstOpenGLProject.dir/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/FirstOpenGLProject.dir/src/glad.c.s"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/src/glad.c -o CMakeFiles/FirstOpenGLProject.dir/src/glad.c.s
 
+CMakeFiles/FirstOpenGLProject.dir/src/VAO.cpp.o: CMakeFiles/FirstOpenGLProject.dir/flags.make
+CMakeFiles/FirstOpenGLProject.dir/src/VAO.cpp.o: /home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/src/VAO.cpp
+CMakeFiles/FirstOpenGLProject.dir/src/VAO.cpp.o: CMakeFiles/FirstOpenGLProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/out/build/idk_what_a_preset_is/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/FirstOpenGLProject.dir/src/VAO.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FirstOpenGLProject.dir/src/VAO.cpp.o -MF CMakeFiles/FirstOpenGLProject.dir/src/VAO.cpp.o.d -o CMakeFiles/FirstOpenGLProject.dir/src/VAO.cpp.o -c /home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/src/VAO.cpp
+
+CMakeFiles/FirstOpenGLProject.dir/src/VAO.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FirstOpenGLProject.dir/src/VAO.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/src/VAO.cpp > CMakeFiles/FirstOpenGLProject.dir/src/VAO.cpp.i
+
+CMakeFiles/FirstOpenGLProject.dir/src/VAO.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FirstOpenGLProject.dir/src/VAO.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/src/VAO.cpp -o CMakeFiles/FirstOpenGLProject.dir/src/VAO.cpp.s
+
+CMakeFiles/FirstOpenGLProject.dir/src/VBO.cpp.o: CMakeFiles/FirstOpenGLProject.dir/flags.make
+CMakeFiles/FirstOpenGLProject.dir/src/VBO.cpp.o: /home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/src/VBO.cpp
+CMakeFiles/FirstOpenGLProject.dir/src/VBO.cpp.o: CMakeFiles/FirstOpenGLProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/out/build/idk_what_a_preset_is/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/FirstOpenGLProject.dir/src/VBO.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FirstOpenGLProject.dir/src/VBO.cpp.o -MF CMakeFiles/FirstOpenGLProject.dir/src/VBO.cpp.o.d -o CMakeFiles/FirstOpenGLProject.dir/src/VBO.cpp.o -c /home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/src/VBO.cpp
+
+CMakeFiles/FirstOpenGLProject.dir/src/VBO.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FirstOpenGLProject.dir/src/VBO.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/src/VBO.cpp > CMakeFiles/FirstOpenGLProject.dir/src/VBO.cpp.i
+
+CMakeFiles/FirstOpenGLProject.dir/src/VBO.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FirstOpenGLProject.dir/src/VBO.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/src/VBO.cpp -o CMakeFiles/FirstOpenGLProject.dir/src/VBO.cpp.s
+
+CMakeFiles/FirstOpenGLProject.dir/src/EBO.cpp.o: CMakeFiles/FirstOpenGLProject.dir/flags.make
+CMakeFiles/FirstOpenGLProject.dir/src/EBO.cpp.o: /home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/src/EBO.cpp
+CMakeFiles/FirstOpenGLProject.dir/src/EBO.cpp.o: CMakeFiles/FirstOpenGLProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/out/build/idk_what_a_preset_is/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/FirstOpenGLProject.dir/src/EBO.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FirstOpenGLProject.dir/src/EBO.cpp.o -MF CMakeFiles/FirstOpenGLProject.dir/src/EBO.cpp.o.d -o CMakeFiles/FirstOpenGLProject.dir/src/EBO.cpp.o -c /home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/src/EBO.cpp
+
+CMakeFiles/FirstOpenGLProject.dir/src/EBO.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FirstOpenGLProject.dir/src/EBO.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/src/EBO.cpp > CMakeFiles/FirstOpenGLProject.dir/src/EBO.cpp.i
+
+CMakeFiles/FirstOpenGLProject.dir/src/EBO.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FirstOpenGLProject.dir/src/EBO.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/src/EBO.cpp -o CMakeFiles/FirstOpenGLProject.dir/src/EBO.cpp.s
+
+CMakeFiles/FirstOpenGLProject.dir/src/shaderClass.cpp.o: CMakeFiles/FirstOpenGLProject.dir/flags.make
+CMakeFiles/FirstOpenGLProject.dir/src/shaderClass.cpp.o: /home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/src/shaderClass.cpp
+CMakeFiles/FirstOpenGLProject.dir/src/shaderClass.cpp.o: CMakeFiles/FirstOpenGLProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/out/build/idk_what_a_preset_is/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/FirstOpenGLProject.dir/src/shaderClass.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FirstOpenGLProject.dir/src/shaderClass.cpp.o -MF CMakeFiles/FirstOpenGLProject.dir/src/shaderClass.cpp.o.d -o CMakeFiles/FirstOpenGLProject.dir/src/shaderClass.cpp.o -c /home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/src/shaderClass.cpp
+
+CMakeFiles/FirstOpenGLProject.dir/src/shaderClass.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FirstOpenGLProject.dir/src/shaderClass.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/src/shaderClass.cpp > CMakeFiles/FirstOpenGLProject.dir/src/shaderClass.cpp.i
+
+CMakeFiles/FirstOpenGLProject.dir/src/shaderClass.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FirstOpenGLProject.dir/src/shaderClass.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/src/shaderClass.cpp -o CMakeFiles/FirstOpenGLProject.dir/src/shaderClass.cpp.s
+
 # Object files for target FirstOpenGLProject
 FirstOpenGLProject_OBJECTS = \
 "CMakeFiles/FirstOpenGLProject.dir/src/main.cpp.o" \
-"CMakeFiles/FirstOpenGLProject.dir/src/glad.c.o"
+"CMakeFiles/FirstOpenGLProject.dir/src/glad.c.o" \
+"CMakeFiles/FirstOpenGLProject.dir/src/VAO.cpp.o" \
+"CMakeFiles/FirstOpenGLProject.dir/src/VBO.cpp.o" \
+"CMakeFiles/FirstOpenGLProject.dir/src/EBO.cpp.o" \
+"CMakeFiles/FirstOpenGLProject.dir/src/shaderClass.cpp.o"
 
 # External object files for target FirstOpenGLProject
 FirstOpenGLProject_EXTERNAL_OBJECTS =
 
 FirstOpenGLProject: CMakeFiles/FirstOpenGLProject.dir/src/main.cpp.o
 FirstOpenGLProject: CMakeFiles/FirstOpenGLProject.dir/src/glad.c.o
+FirstOpenGLProject: CMakeFiles/FirstOpenGLProject.dir/src/VAO.cpp.o
+FirstOpenGLProject: CMakeFiles/FirstOpenGLProject.dir/src/VBO.cpp.o
+FirstOpenGLProject: CMakeFiles/FirstOpenGLProject.dir/src/EBO.cpp.o
+FirstOpenGLProject: CMakeFiles/FirstOpenGLProject.dir/src/shaderClass.cpp.o
 FirstOpenGLProject: CMakeFiles/FirstOpenGLProject.dir/build.make
 FirstOpenGLProject: CMakeFiles/FirstOpenGLProject.dir/compiler_depend.ts
 FirstOpenGLProject: /usr/lib/libGLX.so
 FirstOpenGLProject: /usr/lib/libOpenGL.so
 FirstOpenGLProject: CMakeFiles/FirstOpenGLProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/out/build/idk_what_a_preset_is/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable FirstOpenGLProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/out/build/idk_what_a_preset_is/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable FirstOpenGLProject"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FirstOpenGLProject.dir/link.txt --verbose=$(VERBOSE)
+	/usr/bin/cmake -E copy_directory /home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/Resources /home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/out/build/idk_what_a_preset_is/Resources
 
 # Rule to build all files generated by this target.
 CMakeFiles/FirstOpenGLProject.dir/build: FirstOpenGLProject

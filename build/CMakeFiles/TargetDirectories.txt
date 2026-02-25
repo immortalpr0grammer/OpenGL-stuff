@@ -1,0 +1,3 @@
+/home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/build/CMakeFiles/FirstOpenGLProject.dir
+/home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/build/CMakeFiles/edit_cache.dir
+/home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/build/CMakeFiles/rebuild_cache.dir

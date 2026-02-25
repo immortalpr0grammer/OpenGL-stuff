@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/g++
 C_DEFINES = 
 
-C_INCLUDES = 
+C_INCLUDES = -I/home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/Headers -I/home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/src
 
 C_FLAGS = -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/Headers -I/home/lasse/Desktop/programming_files/OpenGL/FirstOpenGLProject/src
 
 CXX_FLAGS = -g
 
