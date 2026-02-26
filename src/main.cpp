@@ -20,12 +20,13 @@ int main() {
 
     // Creating an array with vertices of each point. In order XYZ
     GLfloat vertices[] = {
-        -1.0f, -1.0f, 0.0f, // Bottom left corner
-        -0.5f, 0.0f, 0.0f, // Centered height and towards the left
-        0.0f, -1.0f, 0.0f, // Bottom middle
-        1.0f, -1.0f, 0.0f, // Bottom right corner
-        0.5f, 0.0f, 0.0f, // Centered height and towards the right
-        0.0f, 1.0f, 0.0f // Top middle
+                            /*      Colors      */
+        -1.0f, -1.0f, 0.0f,   1.0, 0.6, 0.11, // Bottom left corner
+        -0.5f, 0.0f, 0.0f,    1.0, 0.6, 0.11, // Centered height and towards the left
+        0.0f, -1.0f, 0.0f,    1.0, 0.6, 0.11, // Bottom middle
+        1.0f, -1.0f, 0.0f,    1.0, 0.6, 0.11, // Bottom right corner
+        0.5f, 0.0f, 0.0f,     1.0, 0.6, 0.11, // Centered height and towards the right
+        0.0f, 1.0f, 0.0f,     1.0, 0.6, 0.11  // Top middle
     };
     // Creating an array with the data for which points from the vertices array to use for the triangles
     GLuint indices[] = {
@@ -53,8 +54,11 @@ int main() {
 
     VBO VBO1(vertices, sizeof(vertices));
     EBO EBO1(indices, sizeof(indices));
-
-    VAO1.LinkVBO(VBO1, 0);
+    // Linking the vertices position data
+    VAO1.LinkAttrib(VBO1, 0, 3, GL_FLOAT, 6 * sizeof(float), (void*)0);
+    // Linking the vertices color data
+    VAO1.LinkAttrib(VBO1, 1, 3, GL_FLOAT, 6 * sizeof(float), (void*)(3 * sizeof(float)));
+    // Unbinding everything
     VAO1.Unbind();
     VBO1.Unbind();
     EBO1.Unbind();
