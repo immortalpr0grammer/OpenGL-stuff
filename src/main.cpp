@@ -7,6 +7,20 @@
 #include "VAO.hpp"
 #include "EBO.hpp"
 
+// All global variables
+float scaleValue;
+
+// Function for glfw to use when taking input
+void keyCallback(GLFWwindow *window, int key, int scancode, int action, int mods) {
+    if (key == GLFW_KEY_UP && action == GLFW_PRESS) {
+        scaleValue += 0.10;
+    }
+
+    if (key == GLFW_KEY_DOWN && action == GLFW_PRESS) {
+        scaleValue -= 0.10;
+    }
+}
+
 
 int main() {
 
@@ -40,6 +54,8 @@ int main() {
     window = glfwCreateWindow(640, 480, "Window", NULL, NULL);
     glfwMakeContextCurrent(window);
 
+    glfwSetKeyCallback(window, keyCallback);
+
     // Checking if OpenGL succeeded to load
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
         std::cout << "Failed to load OpenGL!" << std::endl;
@@ -67,7 +83,9 @@ int main() {
 
     // Specifying the color to use when clearing the buffers
     glClearColor(0.25f, 0.5f, 0.75f, 1.0f);
-
+    // Giving the global variables values
+    scaleValue = 1.0f;
+    
     // Main loop
     while (!glfwWindowShouldClose(window)) {
         // Getting any events
@@ -83,7 +101,7 @@ int main() {
         // Making sure we actually use the shit we made
         shaderprogram.Activate();
         // The second parameter is the scale of everything on the screen
-        glUniform1f(uniID, 1);
+        glUniform1f(uniID, scaleValue);
 
         VAO1.Bind();
         // Drawing the triangles. The 9 stands for the amount of vertices btw
